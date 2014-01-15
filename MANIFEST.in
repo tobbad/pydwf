@@ -1,0 +1,4 @@
+include makefile MANIFEST.in 
+include digilent_samples/*.py
+include tools/*.*
+include numpy.i
