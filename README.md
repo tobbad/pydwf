@@ -9,7 +9,7 @@ Currenty this module is tested and used on a debian testing 64 bit machine. If y
 
 Build
 -----
-The library is still in an experoimental state. To build the shared wrapper library just call make in the pydwf folder. This will create a pydwf subfolder where the swig generated python code and the compiled wrapper shared libraryy is put.
+The library is still in an experimental state. To build the shared wrapper library just call make in the pydwf folder. This will create a pydwf subfolder where the swig generated python code and the compiled wrapper shared libraryy is put.
 
 To build the code you need make, gcc and swig. And of course the dwf library from digilent.
 
