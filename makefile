@@ -6,7 +6,7 @@ INC	=
 LIBS	=	-lm
 LIB_DIR = pydwf
 
-all:	pydwf.i makefile
+all:	dwf.i makefile
 	python setup.py build_ext
 	mkdir -p $(LIB_DIR)
 	touch $(LIB_DIR)/__init__.py;mv  dwf.py _dwf.so $(LIB_DIR)/
