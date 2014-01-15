@@ -19,7 +19,7 @@ Build
 -----
 The library is still in an experimental state. To build the shared wrapper library just call make in the pydwf folder. This will create a pydwf subfolder where the swig generated python code and the compiled wrapper shared libraryy is put.
 
-To build the code you need make, gcc and swig. And of course the waveforms (dwf) library from [digilent]
+To build the code you need make, gcc and swig. And of course the WaveForms SDK from [digilent]
 
 Install
 -------
