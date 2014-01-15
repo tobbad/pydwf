@@ -3,6 +3,12 @@ pydwf
 
 Swig generated python bindings for Digilent Wave forms library.
 
+| Directory   | Description                                                                                       |
+| ------------|:--------------------------------------------------------------------------------------------------|
+| [tools]     | Different helper (badly documented) helperscripts.                                                |
+| [test]      | Python scripts which call every generated function (Most of the tests is generated).              |
+
+
 Support
 -------
 Currenty this module is tested and used on a debian testing 64 bit installation. If you have such a Linux distribution or a similar one it will probably work.
@@ -21,6 +27,7 @@ Just call (as root):
 
 python setup.py install 
 
-
-[wavefroms]: http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,849&Prod=WAVEFORMS
+[tools]: https://github.com/tobbad/pydwf/tree/master/tools
+[test]: https://github.com/tobbad/pydwf/tree/master/test
+[waveforms]: http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,849&Prod=WAVEFORMS
 [digilent]: http://www.digilentinc.com/
