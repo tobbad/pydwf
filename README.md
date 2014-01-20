@@ -27,7 +27,25 @@ Just call (as root):
 
 python setup.py install 
 
+Usage
+-----
+To use this python wrapper install the module as described above. To use the module in Python import it:
+<pre>
+from pydef import dwf
+</pre>
+All the function available in the WaveForms SDK Reference Manual are available in the python wrapper. However there are some changes to pyhonize the usage:
+# Drop any FDwf from any function call: The call to FDwfGetLastError becomes dwf.GetLastError
+# The error code returned by the C-Function will raise an python exception with a text description obtained by the FDwfGetLastErrorMsg function.
+# Any variables given as reference to the C-Function to be modified is returned in the python module as new instance of python datatype: Eg. a call :<pre>FDwfDeviceOpen(idxDevice, &hdwf)</pre> becomes <pre> hdwf = dwf.FDwfDeviceOpen(idxDevice)</pre>.
+# There are some exceptions to the last rule: If the input parameter is an array of defined size (Eg. functions <pre>FDwfEnumDeviceName</pre>, <pre>FDwfEnumUserName</pre> ...) are returned in the passed variable.
+# Further the C-functions <pre>FDwfAnalogInStatusData</pre> should be used with numpy-Float data array a size need not be given as the wrapper knows the size of the Numpy array. See the AcquireAnalog function in the aDiscovery.py example script.
+# The <pre>FDwfDigitalInStatusData</pre> should be used with a uint16 numpy array. See AcquireDigital function in the aDiscovery.py example script.
+# Any C-constants are used with the same name as in the Manual. Eg. the C-Enum <pre>trigsrcPC</pre> becomes <pre>dwf.trigsrcPC</pre>.
+
+
+
 [tools]: https://github.com/tobbad/pydwf/tree/master/tools
 [test]: https://github.com/tobbad/pydwf/tree/master/test
 [waveforms]: http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,849&Prod=WAVEFORMS
 [digilent]: http://www.digilentinc.com/
+
