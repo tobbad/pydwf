@@ -46,6 +46,7 @@ All the function available in the WaveForms SDK Reference Manual are available i
 
 
 
+[examples]: https://github.com/tobbad/pydwf/tree/master/examples
 [tools]: https://github.com/tobbad/pydwf/tree/master/tools
 [test]: https://github.com/tobbad/pydwf/tree/master/test
 [waveforms]: http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,849&Prod=WAVEFORMS
