@@ -5,6 +5,7 @@ Swig generated python bindings for Digilent Wave forms library.
 
 | Directory   | Description                                                                                       |
 | ------------|:--------------------------------------------------------------------------------------------------|
+| [examples]  | A short module with some examples how to use the library.                                         |
 | [tools]     | Different helper (badly documented) helperscripts.                                                |
 | [test]      | Python scripts which call every generated function (Most of the tests is generated).              |
 
