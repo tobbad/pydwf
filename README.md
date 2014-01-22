@@ -5,6 +5,7 @@ Swig generated python bindings for Digilent Wave forms library.
 
 | Directory   | Description                                                                                       |
 | ------------|:--------------------------------------------------------------------------------------------------|
+| [examples]  | A short module with some examples how to use the library.                                         |
 | [tools]     | Different helper (badly documented) helperscripts.                                                |
 | [test]      | Python scripts which call every generated function (Most of the tests is generated).              |
 
@@ -45,6 +46,7 @@ All the function available in the WaveForms SDK Reference Manual are available i
 
 
 
+[examples]: https://github.com/tobbad/pydwf/tree/master/examples
 [tools]: https://github.com/tobbad/pydwf/tree/master/tools
 [test]: https://github.com/tobbad/pydwf/tree/master/test
 [waveforms]: http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,849&Prod=WAVEFORMS
