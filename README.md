@@ -26,7 +26,7 @@ Install
 -------
 Just call (as root):
 
-python setup.py install 
+make install 
 
 Usage
 -----
