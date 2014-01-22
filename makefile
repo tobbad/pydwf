@@ -11,7 +11,9 @@ all:	dwf.i makefile
 	mkdir -p $(LIB_DIR)
 	touch $(LIB_DIR)/__init__.py;mv  dwf.py _dwf.so $(LIB_DIR)/
 	python setup.py sdist
-	
+
+install: all
+	python setup.py install
 
 archive: dwf.i makefile setup.py setup.cfg
 	tar zcvf pydwf.tar.gz pydwf.i makefile setup.py setup.cfg numpy.i doc/* aDiscovery.py example.c dwf_handmade.i MANIFEST.in
