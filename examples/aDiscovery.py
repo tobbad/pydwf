@@ -47,7 +47,7 @@ def SysMon(fd, t=60):
         i = dwf.AnalogIOChannelNodeStatus(fd, 2, 1)
         i*=1000
         T = dwf.AnalogIOChannelNodeStatus(fd, 2, 2)
-        print("Output Voltage %4.2f V, Output Current %5.2f mA, Temperatur %5.1f C" %(v,i,T))
+        print("Output Voltage %4.2f V, Output Current %5.2f mA, Temperature %5.1f C" %(v,i,T))
 
 def AcquireAnalog(fd,  cnt, fSample=2E6, chNr=0):
     '''
