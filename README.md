@@ -32,7 +32,7 @@ Usage
 -----
 To use this python wrapper install the module as described above. To use the module in Python import it:
 <pre>
-from pydef import dwf
+from pydwf import dwf
 </pre>
 All the function available in the WaveForms SDK Reference Manual are available in the python wrapper. However there are some changes to pyhonize the usage:
 
