@@ -12,7 +12,7 @@ exScripts=[('digilent_samples',["AnalogIn_Acquisition.py", "AnalogIn_Sample.py",
          ]
 
 setup(name = 'pydwf',
-      version = "2.7.0",
+      version = "2.7.5",
       url='www.baerospace.ch',
       author = "Tobias Badertscher",
       author_email = "pydwf@baerospace.ch",
